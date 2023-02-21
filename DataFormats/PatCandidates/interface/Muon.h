@@ -282,14 +282,6 @@ namespace pat {
     void setJetPtRatio(float jetPtRatio) { jetPtRatio_ = jetPtRatio; }
     void setJetPtRel(float jetPtRel) { jetPtRel_ = jetPtRel; }
 
-    /// Muon MVA
-    float mvaValue() const { return mvaValue_; }
-    void setMvaValue(float mva) { mvaValue_ = mva; }
-
-    // Low pt Muon MVA
-    float lowptMvaValue() const { return lowptMvaValue_; }
-    void setLowPtMvaValue(float lowptmva) { lowptMvaValue_ = lowptmva; }
-
     /// Soft Muon MVA
     float softMvaValue() const { return softMvaValue_; }
     void setSoftMvaValue(float softmva) { softMvaValue_ = softmva; }
@@ -421,7 +413,7 @@ namespace pat {
 
     /// Muon MVA
     float mvaValue_;
-    float lowptMvaValue_;
+    //float lowptMvaValue_;
     float mvaIDValue_;
     float softMvaValue_;
 
