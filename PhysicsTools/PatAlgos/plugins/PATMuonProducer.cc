@@ -981,10 +981,9 @@ void PATMuonProducer::produce(edm::Event& iEvent, const edm::EventSetup& iSetup)
         jetPtRatioRel = globalCache()->calculatePtRatioRel().computePtRatioRel(
             muon, *mvaBTagCollectionTag);
       }
-
+      
       muon.setJetPtRatio(jetPtRatioRel[0]);
       muon.setJetPtRel(jetPtRatioRel[1]);
-
       // multi-isolation
       if (computeMiniIso_) {
         muon.setSelector(reco::Muon::MultiIsoMedium,

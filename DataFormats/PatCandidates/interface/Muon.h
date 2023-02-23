@@ -412,8 +412,6 @@ namespace pat {
     float jetPtRel_;
 
     /// Muon MVA
-    float mvaValue_;
-    //float lowptMvaValue_;
     float mvaIDValue_;
     float softMvaValue_;
 
